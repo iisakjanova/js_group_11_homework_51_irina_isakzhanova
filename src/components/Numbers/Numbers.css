@@ -1,0 +1,14 @@
+.numbers {
+    text-align: center;
+}
+
+.number {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

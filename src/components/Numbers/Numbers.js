@@ -1,4 +1,5 @@
 import React from 'react';
+import "../Numbers/Numbers.css"
 import Number from "../Number/Number";
 
 class Numbers extends React.Component {
@@ -35,7 +36,7 @@ class Numbers extends React.Component {
     render() {
         return (
             <div>
-                <div>
+                <div className="btn-wrapper">
                     <button onClick={this.changeNumbers}>New numbers</button>
                 </div>
                 <div className="numbers">
