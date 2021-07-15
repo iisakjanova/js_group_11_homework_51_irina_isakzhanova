@@ -1,9 +1,10 @@
 import React from 'react';
+import Number from "../Number/Number";
 
 class Numbers extends React.Component {
     state = {
         numbers: []
-    }
+    };
 
     constructor(props) {
         super(props);
@@ -39,7 +40,7 @@ class Numbers extends React.Component {
                 </div>
                 <div className="numbers">
                     {this.state.numbers.map((item) => (
-                        <div className="number" key={item}>{item}</div>
+                        <Number value={item} key={item}/>
                     ))}
                 </div>
             </div>
