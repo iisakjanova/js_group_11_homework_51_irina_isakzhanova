@@ -26,9 +26,17 @@ class Numbers extends React.Component {
         return numbersArray.sort((a, b) => a > b ? 1 : -1);
     }
 
+    changeNumbers = () => {
+        const numbers = this.getNumbers();
+        this.setState({numbers});
+    }
+
     render() {
         return (
             <div>
+                <div>
+                    <button onClick={this.changeNumbers}>New numbers</button>
+                </div>
                 <div className="numbers">
                     {this.state.numbers.map((item) => (
                         <div className="number" key={item}>{item}</div>
